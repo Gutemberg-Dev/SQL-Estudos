@@ -1,0 +1,9 @@
+--DESAFIO 16
+
+--OBJETIVO: Mostrar o preço médio dos produtos de cada categoria.
+
+--Conceitos utilizados: SELECT, FROM, AVG e GROUP BY.
+
+SELECT id_categoria, AVG(preco) AS media_preco
+FROM produtos
+GROUP BY id_categoria;
